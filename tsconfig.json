@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es5",                    // Especifica la versión de JavaScript que se generará (ES5 es ampliamente compatible)
+      "lib": ["dom", "dom.iterable", "esnext"], // Bibliotecas que TypeScript utilizará para conocer los tipos (DOM, ESNext)
+      "allowJs": true,                    // Permite la inclusión de archivos JavaScript
+      "skipLibCheck": true,               // Omite la verificación de tipos en archivos de declaración (.d.ts) para mejorar el rendimiento
+      "esModuleInterop": true,            // Mejora la interoperabilidad con módulos ES (importaciones y exportaciones)
+      "allowSyntheticDefaultImports": true, // Permite importar módulos como si tuvieran exportaciones por defecto
+      "strict": true,                     // Habilita todas las comprobaciones estrictas de TypeScript
+      "forceConsistentCasingInFileNames": true, // Forza que se use el mismo uso de mayúsculas en los nombres de archivos
+      "module": "esnext",                 // Establece el sistema de módulos que se usará (ESNext es común en proyectos modernos)
+      "moduleResolution": "node",         // Define cómo TypeScript encuentra y resuelve módulos en el código
+      "resolveJsonModule": true,          // Permite importar archivos JSON en el proyecto
+      "isolatedModules": true,            // Trata cada archivo como un módulo independiente
+      "noEmit": true,                     // Evita que TypeScript emita archivos .js (útil cuando solo quieres comprobar tipos)
+      "jsx": "react-jsx"                  // Configura el modo JSX, específico para proyectos de React
+    },
+    "include": ["src", "tsconfig.json"],                   // Define los archivos y directorios a incluir para la compilación
+    "exclude": ["node_modules", "build"]  // Excluye directorios específicos de la compilación
+  }
+  
